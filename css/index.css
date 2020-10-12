@@ -164,13 +164,12 @@ img {
   height: auto;
 }
 .app-container {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 98%;
   margin: 1.5rem auto;
-  border: 1px solid red;
 }
 .app-container {
-  background-color: orange;
+  border: 1px solid red;
 }
 .app-container h1 {
   color: green;
@@ -179,4 +178,33 @@ img {
 .app-container h1:hover {
   color: #05508e;
   font-weight: bold;
+}
+.page-nav {
+  margin: 0 15em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1em solid blue;
+}
+.page-nav li:nth-child(odd) {
+  padding: 1em;
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+.page-nav li:nth-child(odd) a {
+  text-decoration: none;
+  color: #ec0e0e;
+  font-size: 2em;
+}
+.page-nav .header-name-logo {
+  width: 45em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.page-nav .header-name-logo li {
+  margin: 0.5em;
+  border: none;
 }
