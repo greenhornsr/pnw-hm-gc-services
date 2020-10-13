@@ -168,34 +168,27 @@ img {
   width: 98%;
   margin: 1.5rem auto;
 }
-.app-container {
-  border: 1px solid red;
-}
-.app-container h1 {
-  color: green;
-  font-family: "Times New Roman", Times, serif;
-}
-.app-container h1:hover {
-  color: #05508e;
-  font-weight: bold;
-}
 .page-nav {
   margin: 0 15em;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: 1em solid blue;
+  border-bottom: 1em solid #0888f1;
 }
 .page-nav li:nth-child(odd) {
   padding: 1em;
-  border-top: 1px solid blue;
-  border-bottom: 1px solid blue;
+  border-top: 1px solid #0888f1;
+  border-bottom: 1px solid #0888f1;
 }
 .page-nav li:nth-child(odd) a {
   text-decoration: none;
   color: #ec0e0e;
   font-size: 2em;
+}
+.page-nav li:nth-child(odd) a:hover {
+  text-decoration: underline;
+  text-decoration-color: #0888f1;
 }
 .page-nav .header-name-logo {
   width: 45em;
@@ -207,4 +200,89 @@ img {
 .page-nav .header-name-logo li {
   margin: 0.5em;
   border: none;
+}
+.header-section-nav ul {
+  height: 16vh;
+  margin: 0 30em;
+  padding-bottom: 10em;
+  display: flex;
+  justify-content: space-around;
+}
+.header-section-nav ul li:hover {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #0888f1;
+}
+.header-section-nav ul li a {
+  color: #ec0e0e;
+  font-size: 2em;
+  text-decoration: none;
+}
+.call-to-action {
+  color: white;
+  padding: 2em;
+  text-align: center;
+  background-size: cover;
+  background-image: url("../assets/imgs/fireplacewithwaterfall-resize.png");
+  background-repeat: no-repeat;
+}
+.call-to-action .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.call-to-action .contact h1 {
+  width: 40%;
+  font-size: 7em;
+  border-bottom: 2px solid #0888f1;
+}
+.call-to-action .contact-info {
+  width: 40%;
+  padding: 2em;
+}
+.call-to-action .contact-info h2 a {
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+}
+#mailus:hover {
+  cursor: url(../assets/icons/006-mail-send.png), auto;
+}
+#callus:hover {
+  cursor: url(../assets/icons/005-call.png), auto;
+}
+#services {
+  padding: 2em 0;
+  color: white;
+  font-weight: bold;
+  background-image: url("../assets/imgs/wateringlawn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#services .services-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#services .services-sections section {
+  width: 48%;
+  height: 32vh;
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+#services .services-sections section img:hover {
+  cursor: pointer;
+  width: 22em;
+  height: 22em;
+}
+#services .services-sections section img {
+  width: 20em;
+  height: 20em;
+  border-radius: 80%;
+  border: 2px solid #0888f1;
+}
+.dividers {
+  height: 80vh;
 }

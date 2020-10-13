@@ -1,14 +1,15 @@
 .app-container {
-    border: @dev-border-width @dev-border-style @dev-border-color;
+    // border: @dev-border-width @dev-border-style @dev-border-color;
 }
-.app-container h1 {
-    color: green;
-    font-family: @font-family-tnr;
-    &:hover{
-        .darkenColorOnHover20-class(@secondary-color);
-    }
-}
+// .app-container h1 {
+//     color: green;
+//     font-family: @font-family-tnr;
+//     &:hover{
+//         .darkenColorOnHover20-class(@secondary-color);
+//     }
+// }
 
+// Header + Nav Section
 .page-nav {
     margin: 0 15em;
     display: flex;
@@ -16,15 +17,19 @@
     justify-content: space-evenly;
     align-items: center;
     // background-color: orange;
-    border-bottom: 1em solid blue;
+    border-bottom: 1em solid @secondary-color;
     li:nth-child(odd) {
         padding: 1em;
-        border-top: 1px solid blue;
-        border-bottom: 1px solid blue;
+        border-top: 1px solid @secondary-color;
+        border-bottom: 1px solid @secondary-color;
         a{
             text-decoration: none;
             color: @font-color-one;
-            font-size: 2em;
+            font-size: @header-font-size;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: @secondary-color;
+            }
         }
     }
     .header-name-logo {
@@ -40,3 +45,108 @@
         }
     }
 }
+
+.header-section-nav ul{
+    height: 16vh;
+    margin: 0 30em;
+    padding-bottom: 10em;
+    display: flex;
+    justify-content: space-around;
+    // border: 1px solid red;
+    li:hover {
+        padding-bottom: 1em;
+        border-bottom: 1px solid @secondary-color;
+    }
+    li a{
+        color: @font-color-one;
+        font-size: @header-font-size;
+        text-decoration: none;
+    }
+}
+
+// End Header + Nav Section
+
+// Call to Action
+.call-to-action {
+    color: @alt-primary-color;
+    padding: 2em;
+    text-align: center;
+    background-size: cover;
+    background-image: url("./../assets/imgs/fireplacewithwaterfall-resize.png");
+    background-repeat: no-repeat;
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            width: 40%;
+            font-size: 7em;
+            border-bottom: 2px solid @secondary-color;
+        }
+    }
+    .contact-info {
+        width: 40%;
+        padding: 2em;
+        // border: 1px solid red;
+        h2 a{
+            font-size: 1em;
+            text-decoration: none;
+            color: @alt-primary-color;
+        }
+    } 
+    // border: 4px solid orange;
+    // img {
+    //     transition: transform .8s ease;
+    //     &:hover {
+    //         transform: scale(1.5);
+    //     }
+    // }
+}
+
+#mailus:hover {
+    cursor: url(./../assets/icons/006-mail-send.png), auto;
+}
+
+#callus:hover {
+    cursor: url(./../assets/icons/005-call.png), auto;
+}
+
+#services {
+    padding: 2em 0;
+    color: @alt-primary-color;
+    font-weight: bold;
+    background-image: url("./../assets/imgs/wateringlawn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border: 1px solid lime;
+    .services-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        section {
+            width: 48%;
+            height: 32vh;
+            margin: 2em 0;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            img:hover {
+                cursor: pointer;
+                width: 22em;
+                height: 22em;
+            }
+            // border: 1px solid red;
+            img {
+                width: 20em;
+                height: 20em;
+                border-radius: 80%;
+                border: 2px solid @secondary-color;
+            }
+        }
+    }
+}
+
+    .dividers {
+        height: @primary-view-height;
+    }
